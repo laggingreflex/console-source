@@ -1,0 +1,13 @@
+{
+  "name": "console-source",
+  "version": "0.0.0",
+  "description": "Patch console to output source file, line, column information",
+  "main": "index.js",
+  "repository": "laggingreflex/console-source",
+  "scripts": {
+    "test": "node test"
+  },
+  "dependencies": {
+    "console-interceptor": "^0.1.0"
+  }
+}
