@@ -8,6 +8,6 @@
     "test": "node test"
   },
   "dependencies": {
-    "console-interceptor": "^0.1.0"
+    "console-interceptor": "^0.2.0"
   }
 }
