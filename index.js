@@ -35,7 +35,7 @@ const getFilename = () => {
     .filter(Boolean)
     .filter((a) => a[0])
     .map((s) => Path.relative(cwd, s[0] || "") + `:${s[1] || ""}`);
-  return stack[line]?.slice?.(0, -3);
+  return stack?.[line]?.slice?.(0, -3)?.replace?.(/^file:[\\\/]+/, "");
 };
 
 const modifyConsoleMessage = (input) => {
