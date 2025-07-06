@@ -1,4 +1,3 @@
-
 # console-source
 
 Patch's global `console` to output source file, line, column information
@@ -13,24 +12,26 @@ npm i console-source
 
 1. Require the module in your code
 
-    ```js
-    require('console-source');
-    ```
+   ```js
+   require("console-source");
+   ```
 
 2. Set either of these environment variable:
 
-    * `ENV=CONSOLE_SOURCE`
-    * `CONSOLE_SOURCE`
+   - `ENV=CONSOLE_SOURCE`
+   - `CONSOLE_SOURCE`
 
 ### Example
 
 ```js
 // test.js
-console.log('test')
+console.log("test");
 ```
+
 ```
 ENV=CONSOLE_SOURCE node --require console-source test.js
 ```
+
 ```
 test ………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………… test.js:1:1
 ```
@@ -38,11 +39,11 @@ test …………………………………………………………………
 ### API
 
 ```js
-const {disable, line} = require('console-source');
+const { disable, line } = require("console-source");
 ```
 
-* **`disable`** `{function}` Disable
-* **`line`** `{(number) => {}}` Adjust this number if it's not logging the correct source
+- **`disable`** `{function}` Disable
+- **`line`** `{(number) => {}}` Adjust this number if it's not logging the correct source
 
 #### Environment Variables
 
@@ -59,4 +60,4 @@ CONSOLE_SOURCE_LINE=<number>
 
 ## Related
 
-* [console-interceptor](//github.com/laggingreflex/console-interceptor)
+- [console-interceptor](//github.com/laggingreflex/console-interceptor)
