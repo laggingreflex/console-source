@@ -61,3 +61,4 @@ CONSOLE_SOURCE_LINE=<number>
 ## Related
 
 - [console-interceptor](//github.com/laggingreflex/console-interceptor)
+- [console-tee](//github.com/laggingreflex/console-tee)
